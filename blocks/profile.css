@@ -1,0 +1,66 @@
+.profile {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  max-width: 880px;
+}
+
+.profile__image {
+  margin-right: 30px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+.profile__info {
+  display: grid;
+  grid-template-areas:
+    "title button"
+    "subtitle subtitle";
+  grid-template-columns: minmax(auto, 393px) auto;
+}
+
+.profile__title {
+  color: white;
+  grid-area: title;
+  font-family: "Inter", Arial, Sans-serif;
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 48px;
+  margin: 0 0 7px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 415px;
+}
+
+.profile__edit-button {
+  grid-area: button;
+  background: transparent url(../images/pencil-icon.svg) center no-repeat;
+  width: 24px;
+  height: 24px;
+}
+
+.profile__subtitle {
+  color: white;
+  grid-area: subtitle;
+  font-family: "Inter", Arial, Sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21.78px;
+  margin: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 415px;
+}
+
+.profile__add-button {
+  height: 50px;
+  width: 150px;
+  background: transparent url(../images/add-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-color: white;
+  margin-left: auto;
+}
