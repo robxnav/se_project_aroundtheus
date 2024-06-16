@@ -6,3 +6,12 @@
   padding: 67px 0 60px;
   line-height: 21.78px;
 }
+
+@media only screen and (max-width: 618px) {
+  .footer {
+    font-size: 14px;
+    line-height: 16.94px;
+    padding: 48px 0 36px;
+    width: 282px;
+  }
+}
