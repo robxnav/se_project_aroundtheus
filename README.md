@@ -1,21 +1,34 @@
 # Project 3: Around The U.S.
 
-### Overview  
+The _Around the U.S._ Webpage is the third project from TripleTen's software engineering program. This site is an interactive photo-sharing page where users can create a profile with It was created using HTML and CSS and is based on the design from a Figma specification document.
 
-* Intro  
-* Figma  
-* Images  
-  
-**Intro**
-  
-This project is made so all the elements are displayed correctly on popular screen sizes. We recommend investing more time in completing this project, since it's more difficult than previous ones.  
-  
-**Figma**  
-  
-* [Link to the project on Figma](https://www.figma.com/file/ii4xxsJ0ghevUOcssTlHZv/Sprint-3%3A-Around-the-US?node-id=0%3A1)  
-  
-**Images**  
-  
-The way you'll do this at work is by exporting images directly from Figma — we recommend doing that to practice more. Don't forget to optimize them [here](https://tinypng.com/), so your project loads faster. 
-  
-Good luck and have fun!
+It was created using various responsive elements such as grids, media queries, and text overflow for accesbiliy across different devices.
+
+## Project Features
+
+- Grid Layout
+- Media Queries
+- Text-overflow
+- Flat BEM file structure
+
+**Grid Layout**
+
+The grid layout was the most essential component of the webpage to make it responsove throughout different screen sizes across devices. Using display:grid over flexbox makes the page more flexible when viewed on phones as the page transforsms into a more veritcal platform by collapsing elements instead of shrinking.
+
+![Grid Layout Visualization](images/Flexbox-vs-Grid.png)
+
+**Media Queries**
+
+Media queries were set at 1280px, 775px, and 618px to make them easier to browse on desktops, tablets, and phones.
+
+**Text-overflow**
+
+Various styles were given to components to prevent text overflow from breaking the design. Styles such as text-overflow, white-space, overflow, and max-width help protecting the design and making them more flexible as different users may input different data.
+
+**Flat BEM file structure**
+
+BEM file structure was used to make future edits and debugging easier for the user.
+
+## GitHub Link can be found here: https://github.com/robxnav/se_project_aroundtheus.git
+
+## Link to Video Overview: https://drive.google.com/file/d/1tLa2DYwM2-Ssp_bHAU7QR-mzS-pxL2_a/view?usp=sharing
