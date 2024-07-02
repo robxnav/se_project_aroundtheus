@@ -1,42 +1,23 @@
 .header {
-  margin-top: 45px;
+  margin: 45px auto 40px;
   max-width: 880px;
-  max-height: 74px;
-}
-
-.header__line {
-  border-bottom: 1px solid #545454;
-  margin-top: 41px;
+  border-bottom: 1px solid rgba(84, 84, 84, 0.7);
 }
 
 .header__logo {
   width: 172px;
   height: 33px;
+  margin-bottom: 41px;
 }
 
 @media only screen and (max-width: 618px) {
+  .header {
+    margin: 28px auto 42px;
+    width: 100%;
+  }
   .header__logo {
     width: 126px;
     height: 24px;
-  }
-
-  .header__line {
-    border-bottom: 1px solid #545454;
-    flex-direction: column;
-    margin-top: 27px;
-    width: 100%;
-  }
-}
-
-@media only screen and (max-width: 618px) {
-  .header__logo {
-    width: 126px;
-    height: 24px;
-  }
-  .header__line {
-    border-bottom: 1px solid #545454;
-    flex-direction: column;
-    margin-top: 27px;
-    width: 100%;
+    margin: 0 0 32px 27px;
   }
 }

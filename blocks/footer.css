@@ -1,4 +1,4 @@
-.footer {
+.footer__text {
   font-family: "Inter", Arial, Sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -8,7 +8,7 @@
 }
 
 @media only screen and (max-width: 618px) {
-  .footer {
+  .footer__text {
     font-size: 14px;
     line-height: 16.94px;
     padding: 48px 0 36px;
