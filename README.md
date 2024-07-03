@@ -29,6 +29,6 @@ Various styles were given to components to prevent text overflow from breaking t
 
 BEM file structure was used to make future edits and debugging easier for the user.
 
-## GitHub Link can be found here: https://github.com/robxnav/se_project_aroundtheus.git
+## GitHub Pages Link can be found here: https://robxnav.github.io/se_project_aroundtheus/
 
-## Link to Video Overview: https://drive.google.com/file/d/1tLa2DYwM2-Ssp_bHAU7QR-mzS-pxL2_a/view?usp=sharing
+## Link to Video Overview: https://youtu.be/p0QkLe036Ek
