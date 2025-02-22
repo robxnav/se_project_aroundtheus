@@ -45,6 +45,32 @@
   cursor: pointer;
 }
 
+.card__like-button_active {
+  background: no-repeat center transparent url(../images/Union.svg);
+}
+
 .card__like-button:hover {
+  opacity: 50%;
+}
+
+.card__image-container {
+  position: relative;
+}
+
+.card__trash-button {
+  background: no-repeat center url(../images/Trash.svg);
+  position: absolute;
+  width: 18px;
+  height: 19px;
+  top: 18px;
+  right: 15px;
+  z-index: 2;
+  border: none;
+  cursor: pointer;
+  opacity: 100%;
+  transition: opacity 0.3s linear;
+}
+
+.card__trash-button:hover {
   opacity: 50%;
 }
