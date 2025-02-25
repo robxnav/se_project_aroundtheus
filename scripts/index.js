@@ -37,7 +37,7 @@ const profileTitle = document.querySelector(".profile__title");
 const profileSubtitle = document.querySelector(".profile__subtitle");
 const modalTitleInput = document.querySelector("#modal-title-input");
 const modalSubtitleInput = document.querySelector("#modal-subtitle-input");
-const modalEditForm = editModal.querySelector("#edit-modal-form");
+const modalEditForm = document.querySelector("#edit-modal-form");
 const cardList = document.querySelector(".cards__list");
 
 const addButton = document.querySelector(".profile__add-button");
@@ -56,11 +56,11 @@ const cardTemplate =
   document.querySelector("#card-template").content.firstElementChild;
 
 function closeModal(modal) {
-  modal.classList.remove("modal__opened");
+  modal.classList.remove("modal_opened");
 }
 
 function openModal(modal) {
-  modal.classList.add("modal__opened");
+  modal.classList.add("modal_opened");
 }
 
 function renderCard(cardElement, container) {
@@ -88,23 +88,12 @@ function getCardView(cardData) {
 
   cardImage.addEventListener("click", () => {
     openModal(previewImageModal);
-    previewImageModal.classList.add("modal__opened");
     previewImage.src = cardData.link;
     previewImage.alt = cardData.name;
     previewImageTitle.textContent = cardData.name;
   });
 
   return cardElement;
-}
-
-function getCardElement(cardData) {
-  const cardElement = cardTemplate.cloneNode(true);
-  const cardTitle = cardElement.querySelector(".card__caption");
-  const cardImage = cardElement.querySelector(".card__image");
-  console.log(cardData);
-  cardImage.src = cardData.link;
-  cardImage.alt = cardData.name;
-  cardTitle.textContent = cardData.name;
 }
 
 function handleModalEditSubmit(e) {
@@ -123,6 +112,7 @@ modalAddForm.addEventListener("submit", (e) => {
     link,
   });
   renderCard(cardView, cardList);
+  e.target.reset();
   closeModal(addModal);
 });
 
@@ -146,7 +136,6 @@ closePreviewImageButton.addEventListener("click", () =>
 modalEditForm.addEventListener("submit", handleModalEditSubmit);
 
 initialCards.forEach(function (cardData) {
-  const cardElement = getCardElement(cardData);
   const cardView = getCardView(cardData);
   console.log(cardView);
   renderCard(cardView, cardList);
